@@ -40,6 +40,7 @@
 		3B1CBC0C24ABE60000C2A7B9 /* chilkoottrail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B1CBBFF24ABE60000C2A7B9 /* chilkoottrail.jpg */; };
 		3B1CBC0D24ABE60000C2A7B9 /* umbagog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B1CBC0024ABE60000C2A7B9 /* umbagog.jpg */; };
 		3B1CBC0E24ABE60000C2A7B9 /* lakemcdonald.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B1CBC0124ABE60000C2A7B9 /* lakemcdonald.jpg */; };
+		3B1CBC1024ABE89C00C2A7B9 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1CBC0F24ABE89C00C2A7B9 /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		3B1CBBFF24ABE60000C2A7B9 /* chilkoottrail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chilkoottrail.jpg; sourceTree = "<group>"; };
 		3B1CBC0024ABE60000C2A7B9 /* umbagog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = umbagog.jpg; sourceTree = "<group>"; };
 		3B1CBC0124ABE60000C2A7B9 /* lakemcdonald.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lakemcdonald.jpg; sourceTree = "<group>"; };
+		3B1CBC0F24ABE89C00C2A7B9 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				3B03AD7A24AADA5600D57E96 /* LandmarkDetail.swift */,
 				3B03ADC624AAE27600D57E96 /* LandmarkRow.swift */,
 				3B03ADF024AB5EAA00D57E96 /* LandmarkList.swift */,
+				3B1CBC0F24ABE89C00C2A7B9 /* UserData.swift */,
 				3B03ADBC24AAE02000D57E96 /* Landmark.swift */,
 				3B03ADB624AADC6A00D57E96 /* CircleImage.swift */,
 				3B03ADC324AAE20F00D57E96 /* Data.swift */,
@@ -395,6 +398,7 @@
 				3B03ADA424AADA5700D57E96 /* LandmarkDetail.swift in Sources */,
 				3B03ADC424AAE20F00D57E96 /* Data.swift in Sources */,
 				3B03ADBA24AADD6E00D57E96 /* MapView.swift in Sources */,
+				3B1CBC1024ABE89C00C2A7B9 /* UserData.swift in Sources */,
 				3B03ADF124AB5EAA00D57E96 /* LandmarkList.swift in Sources */,
 				3B03ADA224AADA5700D57E96 /* LandmarksApp.swift in Sources */,
 				3B03ADB724AADC6A00D57E96 /* CircleImage.swift in Sources */,
