@@ -17,16 +17,21 @@ struct LandmarkRow: View {
                 .frame(width: 50, height: 50)
             Text(landmark.name)
             Spacer()
+
+            if landmark.isFavorite {
+                Image(systemName: "star.fill")
+                    .foregroundColor(.yellow)
+            }
         }
     }
 }
 
 struct LandmarkRow_Previews: PreviewProvider {
     static var previews: some View {
-        List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-            LandmarkRow(landmark: landmarkData[item])
-                .previewLayout(.fixed(width: 300, height: 70))
+        Group {
+            LandmarkRow(landmark: landmarkData[0])
+            LandmarkRow(landmark: landmarkData[1])
         }
+        .previewLayout(.fixed(width: 300, height: 70))
     }
 }
-
