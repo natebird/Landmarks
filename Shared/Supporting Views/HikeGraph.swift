@@ -19,6 +19,14 @@ func magnitude(of range: Range<Double>) -> Double {
     return range.upperBound - range.lowerBound
 }
 
+extension Animation {
+    static func ripple() -> Animation {
+        Animation.spring(dampingFraction: 0.5)
+            .speed(2)
+            .delay(0.03) // Multiplying by Double(index) causes an unsafe pointer error
+    }
+}
+
 struct HikeGraph: View {
     var hike: Hike
     var path: KeyPath<Hike.Observation, Range<Double>>
@@ -51,6 +59,8 @@ struct HikeGraph: View {
                         range: data[index][keyPath: self.path],
                         overallRange: overallRange)
                     .colorMultiply(self.color)
+                    .transition(.slide)
+                    .animation(.ripple())
                 }
                 .offset(x: 0, y: proxy.size.height * heightRatio)
             }
