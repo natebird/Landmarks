@@ -22,7 +22,9 @@ struct CategoryRow: View {
                 HStack(alignment: .top, spacing: 0) {
                     ForEach(self.items) { landmark in
                         NavigationLink(
-                            destination: LandmarkDetail(landmark: landmark)
+                            destination: LandmarkDetail(
+                                landmark: landmark
+                            )
                         ) {
                             CategoryItem(landmark: landmark)
                         }
@@ -57,5 +59,6 @@ struct CategoryRow_Previews: PreviewProvider {
             categoryName: landmarkData[0].category.rawValue,
             items: Array(landmarkData.prefix(4))
         )
+        .environmentObject(UserData())
     }
 }

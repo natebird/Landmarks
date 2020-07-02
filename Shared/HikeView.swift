@@ -7,19 +7,17 @@
 
 import SwiftUI
 
-extension AnyTransition {
-    static var moveAndFade: AnyTransition {
+struct HikeView: View {
+    var hike: Hike
+    @State private var showDetail = true
+    
+    var transition: AnyTransition {
         let insertion = AnyTransition.move(edge: .trailing)
             .combined(with: .opacity)
         let removal = AnyTransition.scale
             .combined(with: .opacity)
         return .asymmetric(insertion: insertion, removal: removal)
     }
-}
-
-struct HikeView: View {
-    var hike: Hike
-    @State private var showDetail = true
     
     var body: some View {
         VStack {
@@ -37,7 +35,7 @@ struct HikeView: View {
                 Spacer()
 
                 Button(action: {
-                    withAnimation(.easeInOut) {
+                    withAnimation {
                         self.showDetail.toggle()
                     }
                 }) {
@@ -51,7 +49,7 @@ struct HikeView: View {
 
             if showDetail {
                 HikeDetail(hike: hike)
-                    .transition(.moveAndFade)
+                    .transition(transition)
             }
         }
     }
