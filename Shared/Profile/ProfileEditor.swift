@@ -15,7 +15,7 @@ struct ProfileEditor: View {
         let max = Calendar.current.date(byAdding: .year, value: 1, to: profile.goalDate)!
         return min...max
     }
-
+    
     var body: some View {
         List {
             HStack {
@@ -23,11 +23,11 @@ struct ProfileEditor: View {
                 Divider()
                 TextField("Username", text: $profile.username)
             }
-
+            
             Toggle(isOn: $profile.prefersNotifications) {
                 Text("Enable Notifications").bold()
             }
-
+            
             VStack(alignment: .leading, spacing: 20) {
                 Text("Seasonal Photo").bold()
                 
@@ -39,7 +39,7 @@ struct ProfileEditor: View {
                 .pickerStyle(SegmentedPickerStyle())
             }
             .padding(.top)
-
+            
             VStack(alignment: .leading, spacing: 20) {
                 Text("Goal Date").bold()
                 DatePicker(

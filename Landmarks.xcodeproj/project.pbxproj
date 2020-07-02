@@ -182,8 +182,8 @@
 				3B1CBC2024AD22B500C2A7B9 /* HikeView.swift */,
 				3B1CBC2424AD230100C2A7B9 /* HikeDetail.swift */,
 				3B03AD7B24AADA5700D57E96 /* Assets.xcassets */,
-				3B1CBC2E24AD71F400C2A7B9 /* Profile */,
 				3B1CBC1D24AC2FE000C2A7B9 /* Models */,
+				3B1CBC2E24AD71F400C2A7B9 /* Profile */,
 				3B1CBC1324AC0E0000C2A7B9 /* Supporting Views */,
 			);
 			path = Shared;

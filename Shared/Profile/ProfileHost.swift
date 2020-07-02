@@ -11,7 +11,7 @@ struct ProfileHost: View {
     @Environment(\.editMode) var mode
     @EnvironmentObject var userData: UserData
     @State var draftProfile = Profile.default
-
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             HStack {
@@ -46,4 +46,3 @@ struct ProfileHost_Previews: PreviewProvider {
             .environmentObject(UserData())
     }
 }
-
